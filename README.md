@@ -87,12 +87,12 @@ Remplace le contenu de la route `/ma-page` par ceci :
 
 ```js
 app.get('/ma-page', (req, res) => {
-    res.send('
+    res.send(`
         <form action="/creer-fichier">
             <input type="text" name="fichier">
             <button type="submit">Envoyer</button>
         </form>
-    ');
+    `);
 });
 ```
 
