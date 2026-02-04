@@ -102,11 +102,12 @@ Ajoute cette nouvelle route à ton fichier `index.js` :
 ```js
 // Requête GET pour récupérer les données du formulaire
 app.get('/creer-fichier', (req, res) => { 
-    const fs = require('fs'); // Appel à la bibliothèque file system de NodeJS qui permet de manipuler les fichiers
-    const content = req.query.mon_input; // req.query permet d'accéder aux paramètres de la requête GET
+    const fs = require('fs'); // Appel à la bibliothèque file system qui permet de manipuler les fichiers
+    const content = req.query.mon_input; // req.query permet d'accéder aux paramètres de la requête
 
     try {
-        // Création d'un fichier txt via la la méthode fs.writeFileSync. On a deux arguments : le nom du fichier et le contenu à écrire
+        // Création d'un fichier txt via la la méthode fs.writeFileSync
+        // Deux arguments : le nom du fichier et le contenu à écrire
         fs.writeFileSync('test.txt', content);
         // retour de la réponse
         res.send("Fichier créé !");
