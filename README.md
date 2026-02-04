@@ -89,7 +89,7 @@ Remplace le contenu de la route `/ma-page` par ceci :
 app.get('/ma-page', (req, res) => {
     res.send('
         <form action="/creer-fichier">
-            <input type="text" name="mon_input">
+            <input type="text" name="fichier">
             <button type="submit">Envoyer</button>
         </form>
     ');
@@ -103,7 +103,7 @@ Ajoute cette nouvelle route à ton fichier `index.js` :
 // Requête GET pour récupérer les données du formulaire
 app.get('/creer-fichier', (req, res) => { 
     const fs = require('fs'); // Appel à la bibliothèque file system qui permet de manipuler les fichiers
-    const content = req.query.mon_input; // req.query permet d'accéder aux paramètres de la requête
+    const content = req.query.fichier; // req.query permet d'accéder aux paramètres de la requête
 
     try {
         // Création d'un fichier txt via la la méthode fs.writeFileSync
@@ -127,7 +127,7 @@ Pour créer un fichier unique à chaque soumission, utilise un nom de fichier dy
 Voici un guide détaillé :
 
 1. Importer fs : `const fs = require('fs');`
-2. Récupérer le contenu de l'input : `const content = req.query.mon_input;`
+2. Récupérer le contenu de l'input : `const content = req.query.fichier;`
 3. Générer un nom de fichier unique : `const fileName = \file_${Date.now()}.txt`;`
 4. Écrire dans le fichier : `fs.writeFileSync(fileName, content);`
 5. Envoyer une réponse : `res.send(\Fichier ${fileName} créé !`);`
