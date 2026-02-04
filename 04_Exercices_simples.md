@@ -12,3 +12,21 @@ Crée une nouvelle route GET avec l'adresse `/lien` qui renvoie à la pase `/cou
 ### Exercice 4 : Afficher l'heure actuelle
 Crée une nouvelle route GET avec l'adresse `/heure` qui affiche l'heure actuelle. Utilise la fonction `new Date()` pour obtenir la date et l'heure actuelle.  
 Essaye de la formater de la manière suivante : HH:MM:SS.
+
+### Exercice 5 : Quiz et réponse conditionnelle
+Créez une route `/quiz` qui récupère le paramètre GET `reponse` depuis l’URL.  
+
+ ```js
+   const reponse = req.query.reponse || '';
+```
+
+Créez une variable `correc t`qui contient la bonne réponse et une variable `message` vide`.    
+Comparez la valeur à la bonne réponse (`B`) avec une condition `if / else`.  
+Affichez du HTML contenant : la question, trois liens `<a>` pour répondre (`A`, `B`, `C`) et un `message` (par exemple dans une balise `<p>` indiquant si la réponse est correcte ou non.  
+
+```js
+// Exemple de lien à inclure
+/quiz?reponse=A
+```
+
+Testez en cliquant sur les liens et observez la réaction dynamique selon la réponse choisie.
