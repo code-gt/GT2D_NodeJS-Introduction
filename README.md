@@ -35,10 +35,10 @@ Dans le terminal qui apparaît, tape la commande suivante :
 npm init
 ```
 
-Réponds aux questions posées. Cela créera un fichier `package.json` à la racine de ton dossier. Ce fichier contiendra la liste des bibliothèques que tu installeras.
+Réponds aux questions posées. Cela créera un fichier `package.json` à la racine de ton dossier. Ce fichier de configuration - présent dans tout projet JavaScript utilisant des plugins Node - contiendra entre autres la liste des bibliothèques que tu installeras.
 
 ### 3. Installe le paquet Express.js
-Express.js est une bibliothèque qui facilite la création de serveurs web avec Node.js.
+Express.js est un framework pour construire des applications web basées sur NodeJS. C'est le framework standard pour le développement de serveur en NodeJS.
 
 #### Installe Express.js : 
 Dans le terminal, tape la commande suivante :
@@ -48,7 +48,7 @@ npm install express
 ```
 
 #### Crée un fichier index.js : 
-À la racine de ton dossier, crée un fichier `index.js` et copie-colle le code suivant depuis le site officiel : [Express Hello World](https://expressjs.com/fr/starter/hello-world.html){:target="_blank"}.
+À la racine de ton dossier, crée un fichier `index.js` et copie-colle le code suivant depuis le site officiel : [Express Hello World](https://expressjs.com/fr/starter/hello-world.html).
 
 #### Lance ton programme Node.js : 
 Dans le terminal, tape :
@@ -87,7 +87,12 @@ Remplace le contenu de la route `/ma-page` par ceci :
 
 ```js
 app.get('/ma-page', (req, res) => {
-    res.send('<form action="/creer-fichier"><input type="text" name="mon_input"><button type="submit">Envoyer</button></form>');
+    res.send(`
+        <form action="/creer-fichier">
+            <input type="text" name="mon_input">
+            <button type="submit">Envoyer</button>
+        </form>
+    `);
 });
 ```
 
@@ -109,7 +114,7 @@ app.get('/creer-fichier', (req, res) => {
 });
 ```
 
-Maintenant, envoie une phrase via le formulaire sur `/ma-page` et observe la création d'un fichier test.txt contenant le texte saisi.
+Maintenant, envoie une phrase via le formulaire sur `/ma-page` et observe la création d'un fichier `test.txt` contenant le texte saisi.
 
 ### Explication du code ci-dessus
 
