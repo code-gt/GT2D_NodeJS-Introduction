@@ -20,13 +20,13 @@ Créez une route `/quiz` qui récupère le paramètre GET `reponse` depuis l’U
    const reponse = req.query.reponse || '';
 ```
 
-Créez une variable `correc t`qui contient la bonne réponse et une variable `message` vide`.    
+Créez une variable `correct` qui contient la bonne réponse et une variable `message` vide.  
 Comparez la valeur à la bonne réponse (`B`) avec une condition `if / else`.  
 Affichez du HTML contenant : la question, trois liens `<a>` pour répondre (`A`, `B`, `C`) et un `message` (par exemple dans une balise `<p>` indiquant si la réponse est correcte ou non.  
 
 ```js
-// Exemple de lien à inclure
-/quiz?reponse=A
+  // Exemple de lien à inclure
+  /quiz?reponse=A
 ```
 
 Testez en cliquant sur les liens et observez la réaction dynamique selon la réponse choisie.
