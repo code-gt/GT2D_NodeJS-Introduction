@@ -1,5 +1,9 @@
 # Introduction à Node.js
 
+
+
+![NodeJS](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/330px-Node.js_logo.svg.png "NodeJS").
+
 **Présentation :** [Lien vers la présentation](https://docs.google.com/presentation/d/1jf586G62z-13970_4TmWhnYsR9jZUjg8rGzMNwfTQkg/edit?usp=sharing)
 
 ## Crée ton premier code backend
