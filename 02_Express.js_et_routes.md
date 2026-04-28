@@ -215,26 +215,6 @@ Vous devriez voir : **Bienvenue sur ma page!**
 
 ---
 
-## 💡 Conseil pour gagner du temps : Nodemon
-
-Chaque fois que vous modifiez le code, vous devez arrêter et relancer le serveur. C'est pénible !
-
-**Nodemon** redémarre le serveur **automatiquement** quand vous sauvegardez votre fichier.
-
-### Installation de Nodemon
-
-    npm install --save-dev nodemon
-
-### Utiliser Nodemon
-
-Au lieu de taper `node index.js`, tapez :
-
-    npx nodemon index.js
-
-Maintenant, quand vous modifiez votre code et que vous sauvegardez (Ctrl + S), le serveur redémarre automatiquement !
-
----
-
 ## 🎓 Qu'avez-vous appris ?
 
 À cette étape, vous devez comprendre :
@@ -307,8 +287,6 @@ Testez chaque route dans votre navigateur !
 - 📖 [Documentation officielle Express.js](https://expressjs.com/fr/)
 
 - 📖 [Guide Express en français](https://expressjs.com/fr/starter/hello-world.html)
-
-- 🎥 [Tutoriel Express.js (EN)](https://www.youtube.com/watch?v=SccSCuHhOw0)
 
 ---
 
