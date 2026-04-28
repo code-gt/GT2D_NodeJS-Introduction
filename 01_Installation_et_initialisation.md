@@ -1,13 +1,11 @@
 # Introduction à Node.js
 
 
-
 ![NodeJS](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/330px-Node.js_logo.svg.png "NodeJS").
 
 **Présentation :** [Lien vers la présentation](https://docs.google.com/presentation/d/1jf586G62z-13970_4TmWhnYsR9jZUjg8rGzMNwfTQkg/edit?usp=sharing)
 
 ## Crée ton premier code backend
-
 
 # 01 - Installation et Initialisation
 
@@ -47,10 +45,6 @@ C'est un outil qui te permet de :
 - 🔄 **Gérer les versions** de tes dépendances
 
 - 📋 **Organiser ton projet** avec un fichier `package.json`
-
-**Exemple :** Au lieu de réécrire un framework web from scratch, tu peux installer Express.js en 1 ligne :
-
-    npm install express
 
 ### Qu'est-ce que package.json ?
 
@@ -266,13 +260,11 @@ Cliquez dessus pour l'ouvrir et consultez son contenu. Il devrait ressembler à 
 
 - 📖 [Documentation officielle NPM](https://docs.npmjs.com/)
 
-- 🎥 [Tutoriel vidéo Node.js (EN)](https://www.youtube.com/watch?v=ENrzD6AvFZE)
-
 ---
 
 ## 🚀 Prochaine étape
 
-Maintenant que tu as installé Node.js et inicalisé ton projet, tu es prêt pour :
+Maintenant que tu as installé Node.js et initialisé ton projet, tu es prêt pour :
 
 👉 **[02 - Express.js et Routes](./02_Express.js_et_routes.md)**
 
